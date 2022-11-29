@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --color-highlight: #EB5428;
+    --color-base-light: #F2F2F2;
+    --color-base-dark: #0D0D0D;
+    --color-bg-translucent: rgba(122, 191, 191, 0.5);
+    --color-bg-opaque: #7ABFBF;
+    --font-display: 'Bebas Neue', Helvetica, sans-serif;
+    --font-body: 'Montserrat', 'Trebuchet MS', sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    SETUP                                   */
+/* -------------------------------------------------------------------------- */
+
