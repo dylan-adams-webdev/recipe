@@ -1,16 +1,272 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
-:root {
-    --color-highlight: #EB5428;
-    --color-base-light: #F2F2F2;
-    --color-base-dark: #0D0D0D;
-    --color-bg-translucent: rgba(122, 191, 191, 0.5);
-    --color-bg-opaque: #7ABFBF;
-    --font-display: 'Bebas Neue', Helvetica, sans-serif;
-    --font-body: 'Montserrat', 'Trebuchet MS', sans-serif;
-}
-
 /* -------------------------------------------------------------------------- */
 /*                                    SETUP                                   */
 /* -------------------------------------------------------------------------- */
 
+:root {
+	--color-highlight: #eb5428;
+	--color-base-light: #f2f2f2;
+	--color-base-dark: #0d0d0d;
+	--color-bg-translucent: rgba(122, 191, 191, 0.5);
+	--color-bg-opaque: #7abfbf;
+	--font-display: 'Bebas Neue', Helvetica, sans-serif;
+	--font-body: 'Montserrat', 'Trebuchet MS', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: var(--color-bg-translucent);
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	max-width: 414px;
+	margin: auto;
+	font-family: var(--font-body);
+	font-size: 16px;
+	background: var(--color-base-light);
+}
+
+h1,
+h2,
+h3,
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
+	font-family: var(--font-display);
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
+	font-size: 20px;
+}
+
+dt {
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.5;
+}
+
+section,
+aside {
+	padding: 1em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  MAIN NAV                                  */
+/* -------------------------------------------------------------------------- */
+
+#main-nav {
+	position: absolute;
+	top: 0;
+	height: 90px;
+	max-width: 414px;
+	width: 100%;
+	background-color: var(--color-base-light);
+}
+
+#main-nav h2,
+#main-nav #hamburger {
+	display: none;
+}
+
+#main-nav label[for='hamburger'] {
+	position: absolute;
+	top: 13px;
+	left: 31px;
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+}
+
+#main-nav #hamburger:checked ~ ul {
+	max-height: 1000px;
+	transition: max-height 0.2s ease-in-out;
+}
+
+#main-nav ul {
+	background: #fff;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	user-select: none;
+	position: absolute;
+	top: 0;
+	max-height: 90px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-in-out;
+}
+
+#main-nav li {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main-nav a {
+	color: var(--color-base-dark);
+}
+
+#main-nav span {
+	display: block;
+}
+
+#main-nav li:first-child {
+	order: -1;
+	width: 50%;
+	background: var(--color-highlight);
+}
+
+#main-nav li:last-child {
+	order: -1;
+	width: 25%;
+}
+
+#main-nav li:last-child svg {
+	stroke: var(--color-highlight);
+	display: block;
+	margin: auto;
+}
+
+#main-nav img {
+	height: 60px;
+	display: block;
+}
+
+#main-nav label[for='search'] {
+	display: none;
+}
+
+#main-nav #search-form {
+	position: static;
+	margin-top: 115px;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#main-nav button {
+	display: inline-block;
+	padding: 0;
+	border: none;
+	background: var(--color-highlight);
+	height: 50px;
+	width: 50px;
+}
+
+#main-nav button svg {
+	stroke: #fff;
+}
+
+#main-nav #search {
+	height: 50px;
+	width: 60%;
+	border: 2px solid var(--color-highlight);
+	padding-left: 0.5em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+header {
+	padding-top: 185px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ------------------------------- ACTION MENU ------------------------------ */
+
+header nav {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+header nav h2 {
+	display: none;
+}
+
+header nav menu {
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+header nav a {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+header nav span {
+	order: 2;
+	color: var(--color-highlight);
+}
+
+header nav span,
+header nav svg {
+	display: block;
+	width: 100%;
+}
+
+/* ------------------------------- TACO IMAGE ------------------------------- */
+
+header img {
+	max-width: 100%;
+	display: block;
+}
+
+/* ------------------------------- DESCRIPTION ------------------------------ */
+
+header p {
+	padding: 0 1em;
+	margin-top: 1em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   DETAILS                                  */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+	body {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+}
