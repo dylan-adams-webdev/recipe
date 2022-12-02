@@ -77,16 +77,26 @@
             <section id="details">
                 <h2>Details</h2>
                 <dl>
-                    <dt>Prep Time</dt>
-                    <dd>10 minutes</dd>
-                    <dt>Cook Time</dt>
-                    <dd>10 minutes</dd>
-                    <dt>Total Time</dt>
-                    <dd>20 minutes</dd>
-                    <dt>Author</dt>
-                    <dd>Taco Cheesington</dd>
-                    <dt>Servings</dt>
-                    <dd>6 Tacos</dd>
+                    <div class="detail-entry">
+                        <dt>Prep Time</dt>
+                        <dd>10 minutes</dd>
+                    </div>
+                    <div class="detail-entry">
+                        <dt>Cook Time</dt>
+                        <dd>10 minutes</dd>
+                    </div>
+                    <div class="detail-entry">
+                        <dt>Total Time</dt>
+                        <dd>20 minutes</dd>
+                    </div>
+                    <div class="detail-entry">
+                        <dt>Author</dt>
+                        <dd>Taco Cheesington</dd>
+                    </div>
+                    <div class="detail-entry">
+                        <dt>Servings</dt>
+                        <dd>6 Tacos</dd>
+                    </div>
                 </dl>
             </section>
             <section id="ingredients">
@@ -116,58 +126,60 @@
             </section>
             <aside id="sides">
                 <h2>Need some side dishes?</h2>
-                <div class="side-dish">
-                    <h3>Mexican Rice</h3>
-                    <figure>
-                        <img src="./assets/img/mexican-rice.png" alt="Rice with a mexican spice">
-                        <figcaption>
-                            Traditional recipe with a twist.
-                        </figcaption>
-                    </figure>
-                    <dl>
-                        <dt>Rating</dt>
-                        <dd>(coming soon)</dd>
-                    </dl>
-                </div>
-                <div class="side-dish">
-                    <h3>Salsa</h3>
-                    <figure>
-                        <img src="./assets/img/salsa.png" alt="Pico de Gallo salso with a twist">
-                        <figcaption>
-                            Just the right amount of spice.
-                        </figcaption>
-                    </figure>
-                    <dl>
-                        <dt>Rating</dt>
-                        <dd>(coming soon)</dd>
-                    </dl>
-                </div>
-                <div class="side-dish">
-                    <h3>Guacamole</h3>
-                    <figure>
-                        <img src="./assets/img/guacamole.png" alt="Avocados in a bowl that have been pulverized into a green paste">
-                        <figcaption>
-                            Fresh and healthy.
-                        </figcaption>
-                    </figure>
-                    <dl>
-                        <dt>Rating</dt>
-                        <dd>(coming soon)</dd>
-                    </dl>
-                </div>
-                <div class="side-dish">
-                    <h3>Tortillas</h3>
-                    <figure>
-                        <img src="./assets/img/tortillas.png" alt="Tortillas that have been made at home">
-                        <figcaption>
-                            Easy to make and so good.
-                        </figcaption>
-                    </figure>
-                    <dl>
-                        <dt>Rating</dt>
-                        <dd>(coming soon)</dd>
-                    </dl>
-                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="side-dish">
+                            <img src="./assets/img/mexican-rice.png" alt="Rice with a mexican spice">
+                            <dl class="side-details">
+                                <dt>Mexican Rice</dt>
+                                <dd>Traditional recipe with a twist.</dd>
+                            </dl>
+                            <dl class="side-rating">
+                                <dt>Rating</dt>
+                                <dd>(coming soon)</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-dish">
+                            <img src="./assets/img/salsa.png" alt="Pico de Gallo salso with a twist">
+                            <dl class="side-details">
+                                <dt>Salsa</dt>
+                                <dd>Just the right amount of spice.</dd>
+                            </dl>
+                            <dl class="side-rating">
+                                <dt>Rating</dt>
+                                <dd>(coming soon)</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-dish">
+                            <img src="./assets/img/guacamole.png" alt="Avocados in a bowl that have been pulverized into a green paste">
+                            <dl class="side-details">
+                                <dt>Guacamole</dt>
+                                <dd>Fresh and healthy.</dd>
+                            </dl>
+                            <dl class="side-rating">
+                                <dt>Rating</dt>
+                                <dd>(coming soon)</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-dish">
+                            <img src="./assets/img/tortillas.png" alt="Tortillas that have been made at home">
+                            <dl class="side-details">
+                                <dt>Tortillas</dt>
+                                <dd>Easy to make and so good.</dd>
+                            </dl>
+                            <dl class="side-rating">
+                                <dt>Rating</dt>
+                                <dd>(coming soon)</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
             </aside>
         </main>
         <nav id="main-nav">
@@ -233,8 +245,8 @@
                 <li>
                     <a href="#">
                         <img src="./assets/img/beverages.png" alt="An iced orange beverage in a wine glass with an orange slice garnish">
+                        <span>Beverages</span>
                     </a>
-                    <span>Beverages</span>
                 </li>
                 <li>
                     <a href="#">
@@ -267,7 +279,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            Facebook
+                            <span>Facebook</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
@@ -276,7 +288,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            Instagram
+                            <span>Instagram</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -287,7 +299,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            YouTube
+                            <span>YouTube</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <rect x="3" y="5" width="18" height="14" rx="4" />
@@ -297,7 +309,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            TikTok
+                            <span>TikTok</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
@@ -307,7 +319,7 @@
                 </ul>
             </section>
             <small>Copyright 2022<br>Taco Cheesington</small>
-            <!-- taco-cheesington.png -->
+            <img src="./assets/img/taco-cheesington.png" alt="A chef's hand sprinkling a topping on a gourmet salad">
         </footer>
 
     </body>
