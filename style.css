@@ -132,12 +132,16 @@ ol {
 
 #main-nav label[for='hamburger'] {
 	position: absolute;
-	top: 13px;
+	top: 8px;
 	left: 31px;
 	z-index: 3;
 	cursor: pointer;
 	text-align: center;
 	user-select: none;
+}
+
+#main-nav label[for='hamburger'] span {
+	margin: 0.25em;
 }
 
 #main-nav #hamburger:checked ~ ul {
@@ -164,19 +168,20 @@ ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 0 0.5em 0;
 }
 
 #main-nav a {
 	color: var(--color-base-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #main-nav span {
 	display: block;
-    margin: 0.5em;
+	margin: 0.5em;
 }
 
 #main-nav li:first-child {
@@ -326,8 +331,8 @@ dt {
 
 .side-details {
 	margin-bottom: 1em;
-    width: 100%;
-    margin-left: 1em;
+	width: 100%;
+	margin-left: 1em;
 }
 
 .side-details dt {
@@ -336,7 +341,7 @@ dt {
 }
 
 .side-rating {
-    margin-left: 1em;
+	margin-left: 1em;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -344,63 +349,63 @@ dt {
 /* -------------------------------------------------------------------------- */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
 }
 
 footer h2,
 footer h3 {
-    display: none;
+	display: none;
 }
 
 /* ------------------------------- SOCIAL MENU ------------------------------ */
 
 #social {
-    margin: 1em 0 0 0;
+	margin: 1em 0 0 0;
 }
 
 #social ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #social li {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 #social a {
-    display: block;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: block;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #social span {
-    order: 2;
-    color: var(--color-highlight);
+	order: 2;
+	color: var(--color-highlight);
 }
 
 /* ---------------------------------- IMAGE --------------------------------- */
 
 footer img {
-    width: 50%;
-    display: block;
-    margin: 1em auto;
+	width: 50%;
+	display: block;
+	margin: 1em auto;
 }
 
 /* ------------------------------- SMALL PRINT ------------------------------ */
 
 footer small {
-    order: 2;
-    display: block;
-    margin: auto;
-    text-align: center;
+	order: 2;
+	display: block;
+	margin: auto;
+	text-align: center;
 }
 @media only screen and (min-width: 768px) {
 	body {
