@@ -50,10 +50,13 @@ h1 {
 
 h2 {
 	font-size: 30px;
+	margin: 0.5em;
+	text-align: center;
 }
 
 h3 {
 	font-size: 25px;
+	margin: 0.5em;
 }
 
 nav a,
@@ -63,6 +66,11 @@ menu li,
 #social li,
 footer {
 	font-size: 20px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
 }
 
 dt {
@@ -75,11 +83,33 @@ a {
 
 p {
 	line-height: 1.5;
+	padding: 0 1em;
+	margin: 0.25em 0;
 }
 
 section,
 aside {
-	padding: 1em;
+	padding: 0 1em;
+}
+
+li {
+	padding-left: 0.5em;
+}
+
+ul li {
+	margin: 0 0 1em 0.5em;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ol li {
+	margin: 0 0 1.5em 0.5em;
+}
+
+ol {
+	list-style-type: decimal;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -138,10 +168,15 @@ aside {
 
 #main-nav a {
 	color: var(--color-base-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #main-nav span {
 	display: block;
+    margin: 0.5em;
 }
 
 #main-nav li:first-child {
@@ -247,21 +282,126 @@ header nav svg {
 /* ------------------------------- TACO IMAGE ------------------------------- */
 
 header img {
-	max-width: 100%;
-	display: block;
-}
-
-/* ------------------------------- DESCRIPTION ------------------------------ */
-
-header p {
-	padding: 0 1em;
-	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                   DETAILS                                  */
 /* -------------------------------------------------------------------------- */
 
+.detail-entry {
+	display: flex;
+}
+
+dt {
+	margin-right: 1em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 SIDE DISHES                                */
+/* -------------------------------------------------------------------------- */
+
+#sides {
+	padding: 0.25em 0;
+	background: var(--color-bg-opaque);
+}
+
+#sides ul {
+	list-style-type: none;
+}
+
+.side-dish {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	max-height: 95px;
+	color: var(--color-base-dark);
+}
+
+#sides img {
+	width: 90px;
+	height: 90px;
+}
+
+.side-details {
+	margin-bottom: 1em;
+    width: 100%;
+    margin-left: 1em;
+}
+
+.side-details dt {
+	font-family: var(--font-display);
+	font-size: 25px;
+}
+
+.side-rating {
+    margin-left: 1em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+footer h2,
+footer h3 {
+    display: none;
+}
+
+/* ------------------------------- SOCIAL MENU ------------------------------ */
+
+#social {
+    margin: 1em 0 0 0;
+}
+
+#social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social li {
+    padding: 0;
+    margin: 0;
+}
+
+#social a {
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#social span {
+    order: 2;
+    color: var(--color-highlight);
+}
+
+/* ---------------------------------- IMAGE --------------------------------- */
+
+footer img {
+    width: 50%;
+    display: block;
+    margin: 1em auto;
+}
+
+/* ------------------------------- SMALL PRINT ------------------------------ */
+
+footer small {
+    order: 2;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
 @media only screen and (min-width: 768px) {
 	body {
 		max-width: 100%;
